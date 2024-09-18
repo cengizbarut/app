@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript innerHTML onclick</title>
+
+    <style>
+        #discerceve{
+            width: 400px; border: 4px solid #59f; padding: 5px;
+        }
+        #iccerceve{
+            width: 378px; border: 1px solid #59f; padding: 10px;
+            font: bold 12px tahoma; color: red;
+        }
+    </style>
+    <script type="text/javascript">
+        let yazi="<h2 style='text-align:center; color:#000'>HAKKIMIZDA</h2><p style='text-align:justify'>Firmamız modarar 30.05.2017 yılında internet üzerinden kendi resmi sitesi olan www.modarar.com sitesi ile siz değerli müşterilerimize hizmet vermeye başlamıştır. Firmamız resmi sitemiz www.modarar.com ile birlikte ülkemizin bilinen pazar yerlerinde de tescilli markamız olan modarar mağaza ismi ile en iyi şekilde memnuniyet garantisi ile siz değerli müşterilerimize hizmet vermektedir.</p><div style='text-align:right; color:#000'>MODARAR</div>";
+   
+   function goster()
+   {
+    document.getElementById("iccerceve").innerHTML=yazi;
+   }
+   function kapat()
+   {
+    document.getElementById("iccerceve").innerHTML="";
+   }
+   </script>
+</head>
+
+<body>
+    <form action="">
+        <input type="button" value="Yaziyi Göster" onclick="goster()"/>
+        <input type="button" value="Yaziyi Kapat" onclick="kapat()"/>
+    </form>
+    <br/>
+
+        <div id="discerceve">
+<div id="iccerceve">
+
+</div>
+
+
+        </div>
+
+    
+</body>
+</html>
