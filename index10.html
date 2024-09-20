@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript tablo oluşturma</title>
+<script>
+function divolustur()
+{
+    document.getElementById("kutu").style.width=document.getElementById("genislik").value+"px";
+    document.getElementById("kutu").style.height=document.getElementById("yukseklik").value+"px";
+    document.getElementById("kutu").style.borderWidth=document.getElementById("kenkal").value;
+    document.getElementById("kutu").style.borderStyle=document.getElementById("kentip").value;
+    document.getElementById("kutu").style.borderColor=document.getElementById("kenrenk").value;
+    document.getElementById("kutu").style.backgroundColor=document.getElementById("arkaplan").value;
+    document.getElementById("kutu").style.borderRadius=document.getElementById("ovallik").value;
+    
+}
+</script>
 </head>
 <body>
     <form action="">
@@ -25,8 +38,7 @@
         <option value="3px">3px</option>
         <option value="4px">4px</option>
         <option value="5px">5px</option>
-
-    </select></td>
+ </select></td>
 </tr>
 <tr>
     <td height="30">Kenarlık Tipi</td>
@@ -36,8 +48,7 @@
         <option value="dashet">Dashet</option>
         <option value="dotted">Dotted</option>
         <option value="double">Double</option>
-
-    </select></td>
+ </select></td>
 </tr>
 <tr>
     <td height="30">Kenarlık Rengi</td>
@@ -67,16 +78,15 @@
         <option value="5px">5px</option>
         <option value="10px">10px</option>
         <option value="15px">15px</option>
-
-    </select></td>
+</select></td>
 </tr>
 <tr>
     <td height="30"></td> 
-    <td><input type="button" value="Oluştur"></td>
+    <td><input type="button" value="Oluştur" onclick="divolustur()"></td>
 </tr>
 </table>
-
-
-    </form>
+ </form>
+ <br/><br/><br/>
+ <div id="kutu"></div>
 </body>
 </html>
