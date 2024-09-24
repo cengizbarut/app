@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmouseover onmouseout ile img etiketi</title>
+    <style>
+        img{
+            margin: 200px 400px;
+        }
+    </style>
+    <script>
+        function yeni()
+        {
+            document.getElementById("foto").src="https://cdn1.xmlbankasi.com/p1/modarar/image/data/resimler/-5932.jpg";
+        }
+        function eski()
+        {
+            document.getElementById("foto").src="https://cdn1.xmlbankasi.com/p1/modarar/image/data/resimler/-5934.jpg";
+        }
+    </script>
+</head>
+<body>
+    <img id="foto" src="https://cdn1.xmlbankasi.com/p1/modarar/image/data/resimler/-5934.jpg" alt="kot pantolon" width="300" onmouseover="yeni()" onmouseout="eski()"/>
+</body>
+</html>
