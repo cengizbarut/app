@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onfocus ve onblur calismasi</title>
+    <script>
+        
+        function giris(x)
+        {
+            document.getElementById(x).style.backgroundColor="yellow";
+            document.getElementById(x).style.color="red";
+        }
+        function cikis(x)
+        {
+            document.getElementById(x).style.backgroundColor="#fff";
+            document.getElementById(x).style.color="#000";
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <textarea name="" id="bolge" cols="120" rows="20" onfocus="giris(this.id)" onblur="cikis(this.id)"></textarea><br/><br/><br/>
+        <input id="alan" type="text" onfocus="giris(this.id)" onblur="cikis(this.id)"/>
+    </form>
+</body>
+</html>
