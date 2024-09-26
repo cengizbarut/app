@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchange calismasi</title>
+    <style>
+        input{
+            width: 160px; height: 30px; border: 1px solid #06c;
+        }
+        td{
+            height: 30px;
+        }
+    </style>
+    <script>
+        function kontrol()
+        {
+            var sifreal= document.getElementById("sifre").value;
+            document.getElementById("uyari").innerHTML="";
+            if(sifreal=="12345")
+        {
+document.getElementById("sifre").style.backgroundColor="#0f0";
+        }
+        else
+        {
+            document.getElementById("uyari").innerHTML="Şifreniz Yanlış!!!";
+            document.getElementById("uyari").style.color="red";
+            document.getElementById("sifre").style.backgroundColor="red";
+            document.getElementById("sifre").style.color="#fff";
+            document.getElementById("sifre").style.border="5px solid #ffff00"
+        }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+    <table>
+        <tr>
+            <td width="130">Kullanıcı Adı</td>
+            <td width="200"><input type="text" id="kullanici"></td>
+            <td width="350"></td>
+        </tr>
+        <tr>
+            <td>Şifre</td>
+            <td><input type="password" id="sifre" onchange="kontrol()"></td>
+            <td><span id="uyari"></span></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
