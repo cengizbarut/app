@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout ve pencere Calismasi</title>
+    <script>
+var pencere;
+function pencereac()
+{
+    pencere=window.open("","Pencere","width=400,height=300,top=200,left=200");
+    pencere.document.write("<html><head><title>Yeni Pencere</title></head><body bgcolor='#ffffc1' text='ce4300'>");
+    pencere.document.write("<center><h3>3 Saniye Sonra Kapanacak</h3></center>");
+    pencere.document.write("</html>");
+    setTimeout("pencerekapat()",3000); 
+}
+function pencerekapat()
+{
+    pencere.close();
+}
+    </script>
+</head>
+<body>
+    <a href="#" onclick="pencereac()">Pencereyi Aç</a>
+</body>
+</html>
