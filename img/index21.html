@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval sayac calismasi</title>
+    <style>
+#kutu{
+    width: 300px;
+    height: 300px;
+    border: 3px solid #000;
+    background-color: aqua;
+    color: red;
+    text-align: center;
+    font-size: 50px;
+    margin: 30px auto;
+    line-height: 300px;
+}
+    </style>
+    <script>
+var sayac=0;
+setInterval("say()",1000);
+function say()
+
+{
+    document.getElementById("kutu").innerHTML=sayac;
+sayac++;
+}
+
+    </script>
+</head>
+<body>
+    <div id="kutu">
+
+    </div>
+</body>
+</html>
